@@ -1,0 +1,6 @@
+2019-11-30 17:11:25,504 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-11-30 17:11:25,505 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-11-30 17:14:00,632 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-11-30 17:15:34,199 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-11-30 17:24:45,005 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-11-30 17:24:45,334 login_handle.py--> send_username 20: INFO ----->输入用户名

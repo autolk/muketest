@@ -38,5 +38,5 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(LoginCsae('test_login'))
     runner = unittest.TextTestRunner()
-#     runner.run(suite)
+    runner.run(suite)
 

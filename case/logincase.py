@@ -55,7 +55,7 @@ if __name__ == '__main__':
         suite = unittest.TestLoader().loadTestsFromTestCase(LoginCsae)
         runner = HTMLTestRunner(stream=f, title="This is first report1", description=u"这个是我们第一次测试报告1", verbosity=2)
         runner.run(suite)
-        # suite = unittest.TestSuite()
+        # suite11 = unittest.TestSuite()
         # # suite.addTest(FirstCase('test_login_code_error'))
         # suite.addTest(LoginCsae('test_login'))
         # # unittest.TextTestRunner().run(suite)

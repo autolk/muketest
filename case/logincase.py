@@ -5,6 +5,7 @@ import time
 import datetime
 import os
 from bussiness.loginbussiness import LoginBusiness
+from bussiness.loginbussiness import SearchBussiness
 from selenium import webdriver
 from log.user_log import UserLog
 from util.excel_util import ExcelUtil
@@ -23,11 +24,15 @@ class LoginCsae(unittest.TestCase):
     def setUp(self):
         self.logger.info('this is chrom')
         self.login_b = LoginBusiness(self.driver)
+        self.search_b = SearchBussiness(self.driver)
 
     @ddt.data(*data)
     def test_login(self,data):
         username,password = data
         self.login_b.user_base(username,password)
+
+    def test_search(self):
+        self.search_b.search_base('测试')
 
     def tearDown(self):
         time.sleep(5)
@@ -41,10 +46,11 @@ class LoginCsae(unittest.TestCase):
 
 if __name__ == '__main__':
 
-    suite = unittest.TestSuite()
-    suite.addTest(LoginCsae('test_login'))
-    runner = unittest.TextTestRunner()
-    runner.run(suite)
+    # suite = unittest.TestSuite()
+    # suite.addTest(LoginCsae('test_login'))
+    # suite.addTest(LoginCsae('test_search'))
+    # runner = unittest.TextTestRunner()
+    # runner.run(suite)
     a = os.path.dirname(os.path.abspath(__file__))
     b = os.path.dirname(a)
     c = os.path.join(b, 'report')

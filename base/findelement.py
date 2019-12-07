@@ -3,9 +3,9 @@ class FindElement(object):
     def __init__(self,driver):
         self.driver = driver
 
-    def get_element(self,key):
+    def get_element(self,node,key):
         read_ini = ReadIin()
-        data = read_ini.get_vaule(key)
+        data = read_ini.get_vaule(node,key)
         by = data.split('>')[0]
         vaule = data.split('>')[1]
         if by == 'id':

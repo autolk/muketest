@@ -1,0 +1,14 @@
+2019-12-01 14:35:34,594 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 14:35:34,962 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 14:39:02,241 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 14:39:03,589 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 14:45:50,887 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 14:45:51,218 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 14:51:20,802 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 14:51:21,052 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 14:56:15,661 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 14:56:15,929 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 15:02:36,257 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 15:02:36,519 login_handle.py--> send_username 20: INFO ----->输入用户名
+2019-12-01 15:08:59,886 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-01 15:09:00,162 login_handle.py--> send_username 20: INFO ----->输入用户名

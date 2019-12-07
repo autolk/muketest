@@ -5,7 +5,7 @@ import time
 import datetime
 import os
 from bussiness.loginbussiness import LoginBusiness
-from bussiness.loginbussiness import SearchBussiness
+from bussiness.searchbusiness import SearchBussiness
 from selenium import webdriver
 from log.user_log import UserLog
 from util.excel_util import ExcelUtil
@@ -31,14 +31,27 @@ class LoginCsae(unittest.TestCase):
         username,password = data
         self.login_b.user_base(username,password)
 
-    def test_search(self):
-        self.search_b.search_base('测试')
+
+        # self.assertIn("课程", text)
+        # try:
+            # 使用断言 判断text是否包含admin字符
+
+        # except AssertionError:
+            # cls.driver.get_screenshot_as_file("../Image/02img.jpg")
+            # # 抛出异常
+            # raise
+
+
+    # def test_search(self):
+    #     self.search_b.search_base('测试')
 
     def tearDown(self):
-        time.sleep(5)
+        time.sleep(2)
 
     @classmethod
     def tearDownClass(cls):
+        text = cls.driver.find_element_by_xpath('//*[@id="login-area"]/ul/li[2]/a/span').text
+        print('登录成功的信息为：', text)
         cls.log.close_handle()
         cls.driver.close()
 

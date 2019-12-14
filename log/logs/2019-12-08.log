@@ -1,0 +1,22 @@
+2019-12-08 14:25:12,333 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:25:13,092 login_handle.py--> send_username 20: INFO ----->这里是输入用户名
+2019-12-08 14:25:13,934 login_handle.py--> send_password 20: INFO ----->这里是输入密码
+2019-12-08 14:25:14,111 login_handle.py--> login_button_click 20: INFO ----->这里是点击登录
+2019-12-08 14:25:38,512 searchcase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:25:38,933 login_handle.py--> send_username 20: INFO ----->这里是输入用户名
+2019-12-08 14:25:39,369 login_handle.py--> send_password 20: INFO ----->这里是输入密码
+2019-12-08 14:25:39,589 login_handle.py--> login_button_click 20: INFO ----->这里是点击登录
+2019-12-08 14:25:41,795 searchcase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:30:21,905 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:30:22,227 login_handle.py--> send_username 20: INFO ----->这里是输入用户名
+2019-12-08 14:30:22,580 login_handle.py--> send_password 20: INFO ----->这里是输入密码
+2019-12-08 14:30:22,695 login_handle.py--> login_button_click 20: INFO ----->这里是点击登录
+2019-12-08 14:30:39,148 searchcase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:30:39,564 login_handle.py--> send_username 20: INFO ----->这里是输入用户名
+2019-12-08 14:30:39,948 login_handle.py--> send_password 20: INFO ----->这里是输入密码
+2019-12-08 14:30:40,146 login_handle.py--> login_button_click 20: INFO ----->这里是点击登录
+2019-12-08 14:30:42,307 searchcase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:31:15,269 logincase.py--> setUp 20: INFO ----->this is chrom
+2019-12-08 14:31:15,746 login_handle.py--> send_username 20: INFO ----->这里是输入用户名
+2019-12-08 14:31:16,102 login_handle.py--> send_password 20: INFO ----->这里是输入密码
+2019-12-08 14:31:16,350 login_handle.py--> login_button_click 20: INFO ----->这里是点击登录

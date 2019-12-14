@@ -1,6 +1,10 @@
 import unittest
 import os
 import datetime
+import sys
+current_directory = os.path.dirname(os.path.abspath(__file__))
+root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
+sys.path.append(root_path)
 from util.HTMLTestRunner import HTMLTestRunner
 # test_dir = './'
 # disconver = unittest.defaultTestLoader.discover(test_dir, pattern='*case.py')
@@ -12,7 +16,7 @@ from util.HTMLTestRunner import HTMLTestRunner
 if __name__ == '__main__':
 
     test_dir = './'
-    disconver = unittest.defaultTestLoader.discover(test_dir, pattern='*case.py')
+    disconver = unittest.defaultTestLoader.discover(test_dir, pattern='logincase.py')
     a = os.path.dirname(os.path.abspath(__file__))
     b = os.path.dirname(a)
     c = os.path.join(b, 'report')

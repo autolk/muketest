@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>This is first report1</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-12-07 17:18:31</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:14.510830</p>
-<p class='attribute'><strong>Status:</strong> Pass 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-12-07 20:18:44</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:35.833482</p>
+<p class='attribute'><strong>Status:</strong> Pass 3</p>
 
 <p class='description'>这个是我们第一次测试报告1</p>
 </div>
@@ -222,7 +222,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='passClass'>
-    <td>LoginCsae</td>
+    <td>case.logincase.LoginCsae</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -235,10 +235,48 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>pass</td>
 </tr>
 
+<tr class='passClass'>
+    <td>case.searchcase.LoginCsae</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_1___18232286308____12345678__</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_search</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
+
+    <div id='div_pt2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
-    <td>1</td>
+    <td>3</td>
+    <td>3</td>
     <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>

@@ -30,14 +30,50 @@ from util.HTMLTestRunner import HTMLTestRunner
 
 
 
-from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.common.keys import Keys
+#
+# from selenium import webdriver
+# driver = webdriver.Chrome()
+# driver.get('https://www.baidu.com')
+# driver.find_element_by_id('kw').send_keys('jjjj')
+#
+# driver.find_element_by_id('kw').send_keys(Keys.ENTER)
 
-from selenium import webdriver
-driver = webdriver.Chrome()
-driver.get('https://www.baidu.com')
-driver.find_element_by_id('kw').send_keys('jjjj')
+try:
+    # 使用断言 判断text是否包含admin字符
+    # cls.assertIn("我的", text)
+    # print('登录成功')
+    f = open('123.txt','r')
+# except BaseException as error:
+except:
+    # cls.driver.get_screenshot_as_file("../Image/02img.jpg")
+    # 抛出异常
+    print('登录失败')
 
-driver.find_element_by_id('kw').send_keys(Keys.ENTER)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -12,3 +12,4 @@ class LoginPage(object):
         return self.fd.get_element('LoginElement','password')
     def get_login_button_element(self):
         return self.fd.get_element('LoginElement','login')
+

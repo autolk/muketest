@@ -40,4 +40,4 @@ class LoginCsae(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.log.close_handle()
-        cls.driver.close()
+        cls.driver.quit()

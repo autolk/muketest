@@ -8,9 +8,6 @@ class LoginHandle(object):
         get_user_log = UserLog()
         self.loger = get_user_log.get_log()
 
-    def login_click(self):
-        self.login_p.get_login_element().click()
-
     def send_username(self,username):
         self.loger.info('这里是输入用户名')
         self.login_p.get_usenname_element().send_keys(username)
@@ -25,6 +22,7 @@ class LoginHandle(object):
         self.loger.info('这里是点击登录')
         self.login_p.get_login_button_element().click()
 
-
+    def get_sucess(self):
+        return self.login_p.get_sucess_element().text
 
 

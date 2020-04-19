@@ -3,7 +3,7 @@ import time
 class ExcelUtil(object):
     def __init__(self,excel_path=None,index=None):
         if excel_path == None:
-            self.excel_path = 'C:/Users/Administrator/Desktop/muke/config/casedata.xls'
+            self.excel_path = 'C:/Users/Administrator/Desktop/hexin/data/logindata.xls'
         else:
             self.excel_path = excel_path
         if index == None:
@@ -27,6 +27,7 @@ class ExcelUtil(object):
         return None
 
 if __name__ == '__main__':
-    excel_util = ExcelUtil()
-    print(excel_util.get_data())
+    excel_path = 'C:/Users/Administrator/Desktop/hexin/data/logindata.xls'
+    excel_util = ExcelUtil(excel_path)
+    print(excel_util.get_data()[1])
 

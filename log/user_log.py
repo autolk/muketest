@@ -42,3 +42,45 @@ if __name__ == '__main__':
     log = user.get_log()
     log.debug('test')
     user.close_handle()
+
+'''import logging
+import os
+import time
+import datetime
+class Logger(object):
+    def __init__(self):
+        """
+        指定保存日志的文件路径，日志级别，调用文件
+        将日志存入到指定的文件中
+        :param logger:
+        """
+        # 创建一个logger(记录器)
+        # 日志记录的工作主要由Logger对象来完成。在调用getLogger时要提供Logger的名称
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        # 创建一个handler，用于写入日志文件
+        rq = datetime.datetime.now().strftime("%Y-%m-%d")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        log_path = os.path.join(base_dir, "logs")
+        log_name = log_path + rq + '.log' # 文件名
+
+        # base_dir = os.path.dirname(os.path.abspath(__file__))
+        # log_dir = os.path.join(base_dir, "logs")
+        # log_file = datetime.datetime.now().strftime("%Y-%m-%d") + ".log"
+        # log_name = log_dir + "/" + log_file
+        # 将日志写入磁盘
+        fh = logging.FileHandler(log_name)
+        fh.setLevel(logging.INFO)
+        # 创建一个handler，用于输出到控制台
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.INFO)
+        # 定义handler的输出格式
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
+        ch.setFormatter(formatter)
+        # 给logger添加handler
+        self.logger.addHandler(fh)
+        self.logger.addHandler(ch)
+
+    def getlog(self):
+        return self.logger'''

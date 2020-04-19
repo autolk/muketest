@@ -11,10 +11,14 @@ class FindElement(object):
         try:
             if by == 'id':
                 return self.driver.find_element_by_id(vaule)
+            elif by == 'name':
+                return self.driver.find_element_by_name(vaule)
             elif by == 'xpath':
                 return self.driver.find_element_by_xpath(vaule)
             elif by == 'select':
                 return self.driver.find_element_by_css_selector(vaule)
+            elif by == 'alert':
+                return self.driver.driver.switch_to.alert
 
         except:
             return None

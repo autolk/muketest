@@ -50,11 +50,11 @@ class LoginCsae(unittest.TestCase):
                 filename = case_name + '.png'
                 a = os.path.dirname(os.path.abspath(__file__))
                 b = os.path.dirname(os.path.dirname(a))
-                c = os.path.join(a, 'Image')
+                c = os.path.join(b, 'Image')
                 file_path = c + "/" + filename
                 print(file_path)
                 self.driver.save_screenshot(file_path)
-            self.driver.quit()
+        self.driver.quit()
 
     @classmethod
     def tearDownClass(cls):

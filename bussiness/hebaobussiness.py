@@ -12,6 +12,7 @@ class HebaoBusiness(object):
         self.hebao_h.t_policy_num_send(t_policy_num)
         self.hebao_h.query_button_click()
         self.hebao_h.t_policy_num_button_click()
+        time.sleep(6)
         self.hebao_h.alert_accept_button_click()
         self.hebao_h.select_all_button_click()
         self.hebao_h.to_dec_button_click()

@@ -45,7 +45,7 @@ class LoginCsae(unittest.TestCase):
     def test_query(self,query_data):
         policy_id = query_data
         c = self.query_b.query_base(policy_id)
-        self.assertEqual(c,'保单')
+        self.assertEqual(c,'保单ID')
 
     # 按照投保单信息查询
     t_query_path = 'C:/Users/Administrator/Desktop/hexin/data/querydata.xls'
@@ -56,7 +56,7 @@ class LoginCsae(unittest.TestCase):
     def test_t_query(self,t_query_data):
         t_policy_id = t_query_data
         c = self.query_b.t_query_base(t_policy_id)
-        self.assertEqual(c,'保单')
+        self.assertEqual(c,'保单ID')
 
     def tearDown(self):
         time.sleep(2)
@@ -66,11 +66,10 @@ class LoginCsae(unittest.TestCase):
                 filename = case_name + '.png'
                 a = os.path.dirname(os.path.abspath(__file__))
                 b = os.path.dirname(os.path.dirname(a))
-                c = os.path.join(a, 'Image')
-                file_path = c + "/" + filename
-                print(file_path)
+                c = os.path.join(b, 'Image')
+                file_path = c + '/' + filename
                 self.driver.save_screenshot(file_path)
-            self.driver.quit()
+        self.driver.quit()
 
     @classmethod
     def tearDownClass(cls):

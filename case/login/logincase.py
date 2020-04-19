@@ -12,7 +12,7 @@ from util.excel_util import ExcelUtil
 
 excel_path = 'C:/Users/Administrator/Desktop/hexin/data/logindata.xls'
 excel_login = ExcelUtil(excel_path)
-login_data = [excel_login.get_data()[1]]
+login_data = excel_login.get_data()[1]
 
 @ddt.ddt
 class LoginCsae(unittest.TestCase):
@@ -20,13 +20,18 @@ class LoginCsae(unittest.TestCase):
     def setUpClass(cls):
         cls.log = UserLog()
         cls.logger = cls.log.get_log()
-        cls.driver = webdriver.Chrome()
-        cls.driver.get('http://10.135.100.171:7001/life/main.jsp')
-        cls.driver.maximize_window()
+        # cls.driver = webdriver.Chrome()
+        # cls.driver.get('http://10.135.100.171:7001/life/main.jsp')
+        # cls.driver.maximize_window()
 
     def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.get('http://10.135.100.171:7001/life/main.jsp')
+        self.driver.maximize_window()
+
         self.logger.info('this is chrom')
         self.login_b = LoginBusiness(self.driver)
+
 
     @ddt.data(*login_data)
     def test_login(self,login_data):
@@ -34,11 +39,6 @@ class LoginCsae(unittest.TestCase):
         b = self.login_b.user_base(username,password)
         self.assertEqual(b,'111')
         # self.assertEqual(b,'企业员工弹性福利')
-
-
-
-    # def test_search(self):
-    #     self.search_b.search_base('测试')
 
     def tearDown(self):
         time.sleep(2)
@@ -52,11 +52,12 @@ class LoginCsae(unittest.TestCase):
                 file_path = c + "/" + filename
                 self.driver.save_screenshot(file_path)
                 # print("这个是case的后置调键1")
+        self.driver.quit()
 
     @classmethod
     def tearDownClass(cls):
         cls.log.close_handle()
-        cls.driver.quit()
+        # cls.driver.quit()
 
 
 if __name__ == '__main__':
@@ -84,5 +85,7 @@ if __name__ == '__main__':
         # # suite = unittest.TestLoader().loadTestsFromTestCase(FirstCase)
         # runner = HTMLTestRunner(stream=f, title="This is first123 report", description=u"这个是我们第一次测试报告", verbosity=2)
         # runner.run(suite)
+
+
 
 

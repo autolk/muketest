@@ -29,5 +29,7 @@ class ExcelUtil(object):
 if __name__ == '__main__':
     excel_path = 'C:/Users/Administrator/Desktop/hexin/data/logindata.xls'
     excel_util = ExcelUtil(excel_path)
-    print(excel_util.get_data()[1])
+    data = excel_util.get_data()[0]
+    username, password = data
+    print(username,password)
 

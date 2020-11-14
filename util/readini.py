@@ -14,6 +14,7 @@ class ReadIin(object):
         cf = configparser.ConfigParser()
         cf.read(file_name)
         return cf
+
     def get_vaule(self,node,key):
         data = self.cf.get(node,key)
         return data

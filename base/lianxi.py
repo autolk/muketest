@@ -1,2 +1,2 @@
-a, b = ['aaa', 'bbb']
-print(a, b)
+
+assert(1, 1)

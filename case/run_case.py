@@ -16,7 +16,7 @@ from util.HTMLTestRunner import HTMLTestRunner
 if __name__ == '__main__':
 
     test_dir = './'
-    disconver = unittest.defaultTestLoader.discover(test_dir, pattern='querycase.py')
+    disconver = unittest.defaultTestLoader.discover(test_dir, pattern='logincase.py')
     a = os.path.dirname(os.path.abspath(__file__))
     b = os.path.dirname(a)
     c = os.path.join(b, 'report')

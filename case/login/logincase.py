@@ -12,7 +12,8 @@ from util.excel_util import ExcelUtil
 
 excel_path = 'C:/Users/Administrator/Desktop/hexin/data/logindata.xls'
 excel_login = ExcelUtil(excel_path)
-login_data = excel_login.get_data()[1]
+login_data = excel_login.get_data()[0]
+
 
 @ddt.ddt
 class LoginCsae(unittest.TestCase):
@@ -33,12 +34,13 @@ class LoginCsae(unittest.TestCase):
         self.login_b = LoginBusiness(self.driver)
 
 
-    @ddt.data(*login_data)
-    def test_login(self,login_data):
-        username,password = login_data
+    @ddt.data(login_data)
+    @ddt.unpack
+    def test_login(self,username,password):
+        # username,password = login_data
         b = self.login_b.user_base(username,password)
-        self.assertEqual(b,'111')
-        # self.assertEqual(b,'企业员工弹性福利')
+        # self.assertEqual(b,'111')
+        self.assertEqual(b,'企业员工弹性福利')
 
     def tearDown(self):
         time.sleep(2)
@@ -58,6 +60,7 @@ class LoginCsae(unittest.TestCase):
     def tearDownClass(cls):
         cls.log.close_handle()
         # cls.driver.quit()
+        
 
 
 if __name__ == '__main__':

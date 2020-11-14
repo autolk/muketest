@@ -87,7 +87,7 @@ if __name__ == '__main__':
         # # unittest.TextTestRunner().run(suite)
         # # suite = unittest.TestLoader().loadTestsFromTestCase(FirstCase)
         # runner = HTMLTestRunner(stream=f, title="This is first123 report", description=u"这个是我们第一次测试报告", verbosity=2)
-        # runner.run(suite)
+        # runner.run(suite)1
 
 
 
